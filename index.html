@@ -50,6 +50,69 @@
        <br>Nilgiris presents a truly breathtaking kaleidoscope of visual treats and soul stirring experiences.<br> Come, discover it!</p>
        <br>
 
+       <!--images-->
+       <br><br>
+       <div class="slideshow-container">
+
+         <div class="mySlides fade">
+           <div class="numbertext">1 / 3</div>
+           <img src="teaplant.jpg" style="width:100%;height:500px;">
+           <div class="text">Tea Plantations</div>
+         </div>
+
+         <div class="mySlides fade">
+           <div class="numbertext">2 / 3</div>
+           <img src="koda.jpg" style="width:100%;height:500px;">
+           <div class="text">Kodanadu View POint</div>
+         </div>
+
+         <div class="mySlides fade">
+           <div class="numbertext">3 / 3</div>
+           <img src="pykarafalls.jpg" style="width:100%;height:500px;">
+           <div class="text">Pykara Falls</div>
+         </div>
+
+         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+         <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+       </div>
+       <br>
+
+       <div style="text-align:center">
+         <span class="dot" onclick="currentSlide(1)"></span> 
+         <span class="dot" onclick="currentSlide(2)"></span> 
+         <span class="dot" onclick="currentSlide(3)"></span> 
+       </div>
+       
+       <script>
+           var slideIndex = 1;
+           showSlides(slideIndex);
+
+           function plusSlides(n) {
+             showSlides(slideIndex += n);
+           }
+
+           function currentSlide(n) {
+             showSlides(slideIndex = n);
+           }
+
+           function showSlides(n) {
+             var i;
+             var slides = document.getElementsByClassName("mySlides");
+             var dots = document.getElementsByClassName("dot");
+             if (n > slides.length) {slideIndex = 1}    
+             if (n < 1) {slideIndex = slides.length}
+             for (i = 0; i < slides.length; i++) {
+                  slides[i].style.display = "none";  
+             }
+             for (i = 0; i < dots.length; i++) {
+                  dots[i].className = dots[i].className.replace(" active", "");
+             }
+             slides[slideIndex-1].style.display = "block";  
+             dots[slideIndex-1].className += " active";
+           }
+       </script>
+
        <!--list-->
        <h3 style="text-align:center;">THE DISTRICT AT A GLANCE</h3>
        <p style="text-align:center;">HeadQuarters : Udhagamandalam </p>
@@ -85,16 +148,65 @@
 
        <!--hashtag
        <p style="text-align:center;">#justoknowhowgraphicsworks</p>-->
+       <div class="lolf">
+         <!--what's special-->
+         <h2 style="text-align:center;">What's special here?</h2>
+         <div class="hvrbox">
+           <img src="https://images.unsplash.com/photo-1579765338264-a74752e9a112?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" alt="Tea" class="hvrbox-layer_bottom" style="float:left;">
+           <div class="hvrbox-layer_top">
+             <div class="hvrbox-text">TEA</div>
+           </div>
+         </div>
+
+         <div class="hvrbox">
+           <img src="choco.jpg" style="float:center;">
+           <div class="hvrbox-layer_top">
+             <div class="hvrbox-text">CHOCOLATE</div>
+           </div>
+         </div>
+
+         <div class="hvrbox">
+         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQO3OgvDdeHTOp2h0as60zK0cy1DdqRd5AW4wW-7CExH10XDfkH&usqp=CAU">
+           <div class="hvrbox-layer_top">
+             <div class="hvrbox-text">VARKEY</div>
+           </div>
+         </div>
+         <p>Gourmands and food connoisseurs will find much to appreciate, and many things to buy in Ooty. Its mild and pleasant climate is ideal for growing tea, spices and oil and even cheese-making. So you know what to shop in Ooty! Don’t forget to stock up on these fresh, organic products during your visit. Ooty is one of the most beautiful destinations in the southern part of the country and thus attracts plenty of travellers every year. But, apart from the natural beauty, it is also the things to buy in Ooty that makes it one of the most sought-after destinations in the country. Interestingly, the things that make shopping in Ooty an interesting experience are mostly the edible things from the fresh local produce that make them so unique and worth buying. The fresh local produce of Ooty is perhaps the speciality of Ooty.</p>
+       </div>
+
+         <h2>Ooty Cuisine:</h2>
+         <img src="https://www.tripcrafters.com/images/articles/slides/4542-1501419581.jpg" style="margin-top:10px;margin-left: 120px;float:left;margin-right: 30px; height:350px;width:500px">
+         <p>No matter where you come from, the local cuisine will feature high on your list of to-do items wherever you travel. Ooty holds many delightful surprises for you in the matter of local cuisines. Ooty is one of those places where you get vegetarian as well as non-vegetarian food of excellent quality.</p>
+         <p>If you want to indulge yourself in some locally made pastries, breads and snacks please do go ahead, as the local bread and pastries have a flavor of their own. The coconut burfy which you get in the bakeries of Ooty is a must try. Are you in for some coffee or tea? Ooty still has remnants left of its, once famous coffee and tea plantations and the coffee and tea that you get locally has the aroma of the Nilgiris filled in it. The refreshing taste of locally brewed coffee just lifts your spirit (if it is down for some reason that is) and gives it a new life.</p>
+         <p>The climate of Ooty is ideal for growing a wide variety of fruits. Strawberries, pears, peaches, all are cheap and of the finest quality. You might actually want to take some of them back home with you, if you happen to travel to Ooty from some place nearby. Last but not the least; Ooty has some vineyards as well. If you are lucky, you might actually find some wine shops selling local wine. It is definitely worth the try.</p>
+         <br><br>
+  
 
        <!--plastic free zone-->
-       <h2>No PLASTIC Nilgiris</h2>
-       <img src="https://images.unsplash.com/photo-1588356295620-3a53c9e50ba9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" style="margin-top:10px;margin-left: 120px;float:left;margin-right: 30px;">
-       <p>Nilgiris, one of the most sought after hill stations in India, is fast marching toward its goal of becoming a plastic-free zone. This iconic hill destination in Tamil Nadu attracts lakhs of visitors every year, thereby attracting tons of plastic litter as well. The need of the hour is to encourage people for responsible tourism, which means such a measure will not only benefit the place, but will also help people in the long run. The Nilgiris District Administration has already banned the sale of single-use plastic, such as soft drinks and food items packed in plastic wrappers, plastic water bottles. This ban not only applies in Ooty, but also the district administration has banned single-use plastic items beyond the entry points of the Nilgiris, such as Kunjapanai(Kotagiri), Burliar, Pattavayal, Thalur, Nadugani, Nambiar, Solladi, Kakkanallah, and Geddai. Most interestingly, visitors will also not be allowed to take any banned plastic items along with them.</p><br>
-
-       <h2 >Water ATM - 1 Liter @ 5 Rupees</h2>
-       <img src="https://new-img.patrika.com/upload/2019/05/25/big_water_atm_4621022_835x547-m.jpg" style="margin-top:10px;margin-left: 120px;float:left;margin-right: 30px;height:400px">
-       <p>The water ATMs will first be installed on the sides of the state and national highways in the district in 70 places in the district. The Ooty corporation will have 10 ATMs, the Coonoor corporation will have 4 ATMs, Gudalur (Kotagiri) will have 6 ATMs, Nelakottai will have 4 and so on. The ATMs are installed at the frequently crowded places in the 11 taluks of the district. The District Tourism Board installed ATMs at Dodabetta peak, Ooty Boat House and Pykara Boat House, while the Government Horticultural Department will install at Government Botanical Gardens Ooty, Government Rose Garden, Sims Park in Coonoor, Kotagiri and Katteri Park among others.</p>
-       <p> These ATMs will charge Rs.5 for one liter of pure drinking water!! Consumers have to feed Rs. 5 coins to collect the water. Plastic products are major contaminants and pollution creators for the natural beauty and flora and fauna of Nilgiris, particularly plastic water bottles. This ban and installation of water dispensers is a good move to remove some of the pollution. The Nilgiris residents also welcomed the environmental friendly move to eradicate plastics in the district soon. Green nest Resort the best eco friendly resort in Ooty and Kotagiri also welcomes this move by the government and the resort also has taken many steps to reduce plastics.</p><br>
+       <div class="lolp">
+          <br>
+          <h2 style="text-align:center;color: white;">PLASTIC Free Nilgiris</h2>
+          <img src="plastic.jpg" style="margin-top:10px;margin-left: 120px;float:left;margin-right: 30px;width:400px;height: 300px;">
+          <p style="color: white;">Nilgiris, one of the most sought after hill stations in India, is fast marching toward its goal of becoming a plastic-free zone. This iconic hill destination in Tamil Nadu attracts lakhs of visitors every year, thereby attracting tons of plastic litter as well. The need of the hour is to encourage people for responsible tourism, which means such a measure will not only benefit the place, but will also help people in the long run. The Nilgiris District Administration has already banned the sale of single-use plastic, such as soft drinks and food items packed in plastic wrappers, plastic water bottles.  This ban is applicable throughout the District of The Nilgiris. The district administration has also banned single-use plastic items beyond the entry points of the Nilgiris, such as Kunjapanai(Kotagiri), Burliar, Pattavayal, Thalur, Nadugani, Nambiar, Solladi, Kakkanallah, and Geddai. Most interestingly, visitors will also not be allowed to take any banned plastic items along with them. Interestingly, The Nilgiris was the first district in Tamil Nadu to introduce this plastic ban.</p><br>
+         </div>
+         
+         <div class="lolw">
+          <h2 style="text-align:center;">Water ATM - 1 Liter @ 5 Rupees</h2>
+          <img src="https://im.indiatimes.in/media/content/2019/Sep/ooty_plastic_ban_1569041136_725x725.jpg" style="margin-top:10px;margin-left: 120px;float:left;margin-right: 30px;height:400px">
+          <p>The water ATMs were first installed on the sides of the state and national highways in the district in 70 places in the district. The Ooty municipality have 10 ATMs, the Coonoor has 4 ATMs, Gudalur has 6 ATMs, Nelakottai has 4 and so on. The ATMs are installed at the frequently crowded places in the 11 taluks of the district. The District Tourism Board installed ATMs at Dodabetta peak, Ooty Boat House and Pykara Boat House, while the Government Horticultural Department has installed the same at Government Botanical Gardens Ooty, Government Rose Garden, Sims Park in Coonoor, Kotagiri and Katteri Park among others.</p>
+          <p> These ATMs charge Rs.5 for one liter of pure drinking water. Plastic products are major contaminants and pollution creators for the natural beauty and flora and fauna of Nilgiris, particularly plastic water bottles. This ban and installation of water dispensers is a good move to remove some of the pollution. The Nilgiris residents also welcomed the environmental friendly move to eradicate plastics in the district. </p><br>
+       </div>
+       
+       <!--kurinji-->
+       <div class="lolk">
+        <h2 style="text-align:center;">Kurinji Flower – Treasure Of The Nilgiris</h2>
+        <img src="kurinji.jpg" style="margin-top:10px;margin-right: 120px;float:right;margin-left: 30px;width:500px;height:400px">
+        <p>Out of the five segments of Sangam Landscapes Kurinji, Mullai, Marudham, Neidhal, Paalai in Tamil Nadu, Kurinji represents the mountainous regions where the flower Kurinji abundantly blooms. The Queen of Hills, Ootacumend is popularly called as Blue Mountain, the reason being the flower Kurinji which covers the entire landscape with its purplish blue flowers, transforming the region into totally blue coloured one. Ooty mountain ranges are home to around 33 varieties of Kurinji flowers. It is a nature’s phenomenon, either a scientist or a naturalist can never arrive at any conclusions on how exactly the time intervals are being strictly adhered to by the Kurinji flowers ranging from 3, 7, 12, 17 and 36 years for blossoming, One of the several mysteries of the mother earth still unexplored!</p>
+        <img src="https://www.thebetterindia.com/wp-content/uploads/2017/11/Neelakurinji.jpg" style="margin-top:10px;margin-left: 120px;float:left;margin-right: 30px;height:400px">
+        
+        <p>In the year 2018, the areas in the Blue Mountain Ranges like Ooty, Kothagiri, Coonoor Lamb’s rock are the places where you can see the abundant blooming of the diverse varieties of the Kurinji flowers. Out of all varieities, Kurinji flowers, blossoming once in 12 years claims a special significance and attraction amidst the tourists and nature lovers. Plan a visit to The Nilgiris this season, to enjoy the phenomenal beauty of Kurinji flowers giving you an experience of life time, which no one can afford to miss else need to wait for another eventually long twelve years !!</p>
+        <br><br>
+       </div>
 
 
        <!--points-->
@@ -105,7 +217,7 @@
        <p>	&nbsp;	&nbsp;  &rarr;	&nbsp;	&nbsp;Not bringing plastics.</p>
        <p>	&nbsp;	&nbsp;  &rarr;	&nbsp;	&nbsp;Not picnicing in forest areas.</p>
        <p>	&nbsp;	&nbsp;  &rarr;	&nbsp;	&nbsp;Not feeding wild animals.</p>
-       <p>	&nbsp;	&nbsp;  &rarr;	&nbsp;	&nbsp;Bring your own cloth bags,reusable water bottles,by using water ATMs to refill.</p>
+       <p>	&nbsp;	&nbsp;  &rarr;	&nbsp;	&nbsp;Bringing your own cloth bags, reusable water bottles and refill using water ATMs.</p>
        <br><br><br><br>
 
        <!--quote-->
